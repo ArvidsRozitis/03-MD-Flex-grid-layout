@@ -8,29 +8,30 @@
     <link rel="icon" href="/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/assets/libs/reset.css">
     <link rel="stylesheet" href="/styles.css">
+
     <title>Document</title>
 </head>
 <body>
-    <section class="header">
+    <div class="nav-menu">
+        <a href="javascript:void(0);" onclick="myFunction()">
+            <img src="/assets/images/menu icon.png" alt="menu" class="nav-menu__icon">        
+        </a>
+    <div id="nav-menu-dropdown">
+        <a href="#works" class="nav-bar__btn" onclick="myFunction()">Works</a>
+        <a href="#posts" class="nav-bar__btn" onclick="myFunction()">Blog</a>
+        <a href="#footer" class="nav-bar__btn" onclick="myFunction()">Contact</a>
+    </div>
+    
+    </div>       
+    <section class="header">    
+    
         <div class="nav-bar">
             <a href="#works" class="nav-bar__btn">Works</a>
             <a href="#posts" class="nav-bar__btn">Blog</a>
             <a href="#footer" class="nav-bar__btn">Contact</a>
         </div>
-        <div class="menu-wrap">
-            <input type="checkbox" class="toggler">
-            <div class="hamburger"><div></div></div>
-            <div class="menu">
-                <div>
-                    <a href="#works" class="nav-bar__btn">Works</a>
-                    <a href="#posts" class="nav-bar__btn">Blog</a>
-                    <a href="#footer" class="nav-bar__btn">Contact</a>
-                </div>
-            </div>
-        </div>
-
     </section>    
-    <section class="about">
+    <section id="about" class="about">
         
         <div class="about__container">           
             <div class="introduction">
@@ -167,6 +168,18 @@
         </div>       
     </section>
 
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav-menu-dropdown");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }         
+        }
+    </script>    
+    
     <script src="/scripts.js"></script>
 
 </body>
