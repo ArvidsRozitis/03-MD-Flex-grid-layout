@@ -6,16 +6,168 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/libs/reset.css">
     <link rel="stylesheet" href="/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        Hello World
-    </h1>
-    <img src="/assets/images/cat.jpeg" alt="" width="300">
+    <section class="header">
+        <div class="nav-bar">
+            <a href="#works" class="nav-bar__btn">Works</a>
+            <a href="#posts" class="nav-bar__btn">Blog</a>
+            <a href="#footer" class="nav-bar__btn">Contact</a>
+        </div>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <a href="#works" class="nav-bar__btn">Works</a>
+                    <a href="#posts" class="nav-bar__btn">Blog</a>
+                    <a href="#footer" class="nav-bar__btn">Contact</a>
+                </div>
+            </div>
+        </div>
 
+    </section>    
+    <section class="about">
+        
+        <div class="about__container">           
+            <div class="introduction">
+                <h1 class="introduction__heading">
+                    Hi, I am John,<br>
+                    Creative Technologist
+                </h1>
+                <p class="introduction__paragraph">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                    Velit officia consequat duis enim velit mollit.
+                    Exercitation veniam consequat sunt nostrud amet.
+                </p>
+                <div>
+                    <button class="btn">
+                        <span class="btn__text">
+                            Download Resume
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="avatar">
+                <img src="/assets/images/Ellipse 1.png" alt="Picture" class="avatar__picture">
+                <span class="avatar__shadow"></span>
+            </div>
+        </div>
+    </section>
+    <section id="posts" class="posts">
+        <div class="posts__container">
+            <h4 class="posts__heading">Recent posts</h4>
+            <div class="posts__row">
+                <div class="article">
+                    <h3 class="article__heading">
+                        Making a design system from scratch
+                    </h3>
+                    <div class="article__info">
+                        <time datetime="2020-02-12" class="article__date">12 Feb 2020</time>
+                        <hr class="article__divider">
+                        <span class="article__name">Design, Pattern</span>  
+                    </div>
+                    <p class="paragraph">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet.
+                    </p>   
+                </div>
+                <div class="article">
+                    <h3 class="article__heading">
+                        Creating pixel perfect icons in Figma
+                    </h3>
+                    <div class="article__info">
+                        <time datetime="2020-02-12">12 Feb 2020</time>
+                        <hr class="article__divider" class="article__date">
+                        <span class="article__name">Design, Pattern</span>  
+                    </div>
+                    <p class="paragraph">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet.
+                    </p>   
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="works" class="works">
+        <div class="works__container">
+            <h4 class="works__heading">
+                Featured works
+            </h4>
+            <div class="featured-item">
+                <div class="featured-item__grid">
+                    <img src="assets/images/feature-title-image-dashboard.png" alt="featured image" class="featured-item__image">
+                    <h2 class="featured-item__heading">
+                        Designing Dashboards
+                    </h2>
+                    <div class="featured-item__dc-container">
+                        <time class="featured-item__date" datetime="2020">2020</time>
+                        <span class="featured-item__category">Dashboard</span>
+                    </div>
+                    <p class="featured-item__paragraph">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                    <hr class="featured-item__divider">
+                </div>        
+            </div>
+            <div class="featured-item">
+                <div class="featured-item__grid">
+                    <img src="assets/images/Rectangle 32.png" alt="featured image" class="featured-item__image">
+                    <h2 class="featured-item__heading">
+                        Vibrant Portraits of 2020
+                    </h2>
+                    <div class="featured-item__dc-container">
+                        <time class="featured-item__date" datetime="2018">2018</time>
+                        <span class="featured-item__category">Illustration</span>
+                    </div>
+                    <p class="featured-item__paragraph">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                    <hr class="featured-item__divider">
+                </div>        
+            </div>
+            <div class="featured-item">
+                <div class="featured-item__grid">
+                    <img src="assets/images/Rectangle 34.png" alt="featured image" class="featured-item__image">
+                    <h2 class="featured-item__heading">
+                        36 Days of Malayalam type
+                    </h2>
+                    <div class="featured-item__dc-container">
+                        <time class="featured-item__date" datetime="2018">2018</time>
+                        <span class="featured-item__category">Typography</span>
+                    </div>
+                    <p class="featured-item__paragraph">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                    <hr class="featured-item__divider">
+                </div>        
+            </div>
+        </div>
+    </section>
+    <section id="footer" class="footer">
+            <div class="footer__container">
+            <div class="social">
+                <img src="/assets/images/fb.svg" alt="facebook" class="social__icon">
+                <img src="/assets/images/insta.svg" alt="instagram" class="social__icon">
+                <img src="/assets/images/Vector.svg" alt="twitter" class="social__icon">
+                <img src="/assets/images/Linkedin.svg" alt="linkedin" class="social__icon">                        
+            </div> 
+            <span class="copyright">Copyright ©2020 All rights reserved </span>
+        </div>       
+    </section>
 
     <script src="/scripts.js"></script>
+
 </body>
 </html>
