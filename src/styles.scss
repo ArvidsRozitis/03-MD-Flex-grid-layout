@@ -479,12 +479,107 @@ body {
   color: var(--paragraph-color);
 }
 
-/**/
-/**/
-/**/
-/**/
 
+.t-grid {
+  padding-top: 50px;
+  width: 100%;
+  max-width: 1152px;
+  height: 650px;
+  display: grid;
+  grid-template-areas:
+  "header menu menu menu"
+  "hero hero hero hero"
+  "main main blank image"
+  "main main blank extra"
+  "banner banner banner banner";
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 6fr 1.75fr 1.75fr 2fr;
 
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: header;
+    background-color: #0F1629;
+    color: white;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: menu;
+    background-color: #EF3D4D;
+    color: white;
+  }
+  &__hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: hero;
+    background-color: #4C86C6;
+    color: white;
+  }
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: main;
+    background-color: #24344B;
+    color: white;
+  }
+  &__banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: banner;
+    background-color: #FFD169;
+    color: black;
+  }
+  &__extra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: extra;
+    background-color: #4DBD97;
+    color: black;
+  }
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: image;
+    background-color: #C1E4E6;
+    color: black;
+  }
+}
+
+@media (max-width: 600px) {  
+  .t-grid {
+    grid-template-areas:
+  "header header header header"
+  "hero hero hero hero"
+  "menu main main main"
+  "menu banner banner banner"
+  "menu extra extra image";
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 4fr 4fr 2fr 2fr;
+  }
+}
+
+@media (max-width: 480px) {  
+  .t-grid {
+    grid-template-areas:
+  "header"
+  "menu"
+  "hero"
+  "main"
+  "banner"
+  "extra"
+  "image";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 3fr 3fr 1.5fr 1.5fr 1.5fr;
+  }
+}
 
 
 
